@@ -75,6 +75,9 @@ form label, form select, form textarea, form button, form input[type="date"] {
    padding: 10px;
    border-radius: 3px;
    border: 1px solid #ddd;
+ 
+   
+
 }
 
 form button {
@@ -112,6 +115,34 @@ margin: 0;
    margin: 10px;
    line-height: 25px;
 }
+
+.footer{
+   margin-top: 40px;
+   margin: 50px , 0 10px;
+   text-align: center;
+   
+}
+.footer a{
+   text-decoration: none;
+   color: #4CAF50;
+   font-size: 22px;
+   margin: 0 10px;
+   font-size: 2rem;
+   
+}
+.footer h1{
+   background: #999;
+   height: 1px;
+   width: 100%;
+   border: 0;
+   margin: 20px 0;
+
+}
+.footer p{
+   padding-bottom: 15px;
+}
+
+
 /* Media Queries */
 @media (max-width: 768px) {
    body {
