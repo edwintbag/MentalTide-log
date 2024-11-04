@@ -215,87 +215,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-   const signUpForm = document.getElementById('sign-up-form');
-   const signInForm = document.getElementById('sign-in-form');
-   const journalForm = document.getElementById('journal-form');
-   const journalSection = document.getElementById('journal-section');
-   const authHeader = document.getElementById('auth-header');
-   const signInHeader = document.getElementById('sign-in-header');
-   const toggleAuth = document.getElementById('toggle-auth');
-   const toggleAuthSignUp = document.getElementById('toggle-auth-sign-up');
-   const showSignIn = document.getElementById('show-sign-in');
-   const showSignUp = document.getElementById('show-sign-up');
-   const goSignUp = document.getElementById('go-to-sign-up');
-   const goSignIn = document.getElementById('go-to-sign-in');
-   const landingSection = document.getElementById('landing-section');
-   const authSection = document.getElementById('auth-section');
 
-   // Initially show the landing section
-   journalSection.style.display = 'none';
-   authSection.style.display = 'none';
 
-   goSignUp.addEventListener('click', function(event) {
-       event.preventDefault();
-       landingSection.style.display = 'none';
-       authSection.style.display = 'block';
-       authHeader.style.display = 'block';
-       signInHeader.style.display = 'none';
-       toggleAuth.style.display = 'block';
-       toggleAuthSignUp.style.display = 'none';
-   });
-
-   goSignIn.addEventListener('click', function(event) {
-       event.preventDefault();
-       landingSection.style.display = 'none';
-       authSection.style.display = 'block';
-       authHeader.style.display = 'none';
-       signInHeader.style.display = 'block';
-       toggleAuth.style.display = 'none';
-       toggleAuthSignUp.style.display = 'block';
-   });
-
-   showSignIn.addEventListener('click', function(event) {
-       event.preventDefault();
-       signUpForm.style.display = 'none';
-       signInForm.style.display = 'block';
-       authHeader.style.display = 'none';
-       signInHeader.style.display = 'block';
-       toggleAuth.style.display = 'none';
-       toggleAuthSignUp.style.display = 'block';
-   });
-
-   showSignUp.addEventListener('click', function(event) {
-       event.preventDefault();
-       signUpForm.style.display = 'block';
-       signInForm.style.display = 'none';
-       authHeader.style.display = 'block';
-       signInHeader.style.display = 'none';
-       toggleAuth.style.display = 'block';
-       toggleAuthSignUp.style.display = 'none';
-   });
-
-   // Add event listeners for form submissions
-   signUpForm.addEventListener('submit', function(event) {
-       event.preventDefault();
-       // Handle sign-up logic here (e.g., send data to server)
-       // Redirect to sign-in form after successful sign-up
-       signUpForm.style.display = 'none';
-       signInForm.style.display = 'block';
-       authHeader.style.display = 'none';
-       signInHeader.style.display = 'block';
-       toggleAuth.style.display = 'none';
-       toggleAuthSignUp.style.display = 'block';
-   });
-
-   signInForm.addEventListener('submit', function(event) {
-       event.preventDefault();
-       // Handle sign-in logic here (e.g., validate credentials)
-       // Redirect to main page (journal section) after successful sign-in
-       journalSection.style.display = 'block';
-       authSection.style.display = 'none';
-   });
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -394,3 +315,4 @@ document.addEventListener('DOMContentLoaded', function() {
        authSection.style.display = 'none'; // Hide the authentication section
    });
 });
+
