@@ -1,0 +1,175 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+   color: #333;
+   
+   padding: 20px;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+header {
+   text-align: center;
+   padding: 20px;
+   background-color: #45a049;
+   color: white;
+
+}
+
+#landing-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   height: 50vh;
+   text-align: center; 
+   
+   max-width: 600px;
+   margin: 40px auto;
+   
+}
+#landing-section p{
+   font-size: 24px;
+   color: #222;
+   padding-bottom: 10px;
+}
+#go-to-sign-in, #go-to-sign-up{
+   
+   margin-bottom: 10px;
+   width: 100px;
+   height: 50px;
+   background-color: #45a049;
+   color: white;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+#go-to-sign-in:hover,  #go-to-sign-up:hover{
+   background-color: #fF9900;
+   color: black;
+}
+
+
+#auth-section, #journal-section {
+   max-width: 600px;
+   margin: 0 auto;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+section {
+   margin: 20px;
+   padding: 20px;
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+form label, form select, form textarea, form button, form input[type="date"] {
+   margin-bottom: 10px;
+   padding: 10px;
+   border-radius: 3px;
+   border: 1px solid #ddd;
+}
+
+form button {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+form button:hover {
+   background-color: #45a049;
+}
+
+#analytics {
+   text-align: center;
+   margin: 20px auto;
+   padding: 20px;
+   max-width: 600px;
+}
+
+canvas {
+   max-width: 100%;
+   height: auto;
+}
+
+#about{
+max-width: 600px;
+margin: 0;
+}
+#about h1{
+   text-align: center;
+}
+.about-desc{
+   align-items: center;
+   margin: 10px;
+   line-height: 25px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+   body {
+       padding: 10px;
+   }
+
+   header {
+       padding: 15px;
+   }
+
+   section {
+       margin: 10px;
+       padding: 15px;
+   }
+
+   form label, form select, form textarea, form button, form input[type="date"] {
+       padding: 8px;
+   }
+
+   form button {
+       padding: 8px;
+   }
+   #analytics {
+      padding: 15px;
+  }
+
+  canvas {
+      height: 300px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+   header h1 {
+       font-size: 1.5em;
+   }
+
+   section {
+       padding: 10px;
+   }
+
+   form label {
+       font-size: 14px;
+   }
+
+   form input, form select, form textarea {
+       font-size: 14px;
+   }
+
+   form button {
+       width: 100%;
+       padding: 10px;
+   }
+   #analytics {
+      padding: 10px;
+  }
+
+  canvas {
+      height: 200px;
+  }
+}

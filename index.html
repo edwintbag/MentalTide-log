@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MentalTide Log</h1>
+    </header>
+
+    <section id="landing-section">
+        <h2>Welcome To MentalTide Log</h2>
+
+        <p>Please choose an option below:</p>
+        <button id="go-to-sign-up">Sign Up</button>
+        <button id="go-to-sign-in">Sign In</button>
+    </section>
+
+    <section id="auth-section" style="display: none;">
+        <h2 id="auth-header">Sign Up</h2>
+        <form id="sign-up-form">
+            <label for="sign-up-name">Name</label>
+            <input type="text" id="sign-up-name" name="name" 
+            autocomplete="name" required placeholder="First Name  Last Name">
+
+
+            <label for="sign-up-email">Email</label>
+            <input type="email" id="sign-up-email" name="email"
+             autocomplete="email" required placeholder="INFO@GMAIL.COM">
+
+            <label for="sign-up-password">Password</label>
+            <input type="password" id="sign-up-password" name="password" 
+            autocomplete="new-password" required  placeholder="PASSWORD">
+
+            
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div id="toggle-auth">
+            <p>Already have an account? <a href="#" id="show-sign-in">Sign In</a></p>
+        </div>
+
+        <h2 id="sign-in-header" style="display: none;">Sign In</h2>
+        <form id="sign-in-form" style="display: none;">
+            <label for="sign-in-email">Email</label>
+            <input type="email" id="sign-in-email" name="email" 
+            autocomplete="email" required placeholder="INFO@GMAIL.COM">
+
+            <label for="sign-in-password">Password</label>
+            <input type="password" id="sign-in-password" name="password" 
+            autocomplete="current-password" required   placeholder="PASSWORD">
+
+            
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div id="toggle-auth-sign-up" style="display: none;">
+            <p>Don't have an account? <a href="#" id="show-sign-up">Sign Up</a></p>
+        </div>
+    </section>
+
+    <section id="journal-section" style="display: none;">
+        <form id="journal-form">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+
+            <label for="mood">Mood</label>
+            <select id="mood" required>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="angry">Angry</option>
+                <option value="anxious">Anxious</option>
+                <option value="calm">Calm</option>
+            </select>
+
+            <label for="thoughts">Thoughts</label>
+            <textarea id="thoughts" rows="4" required></textarea>
+
+            <label for="habits">Habits</label>
+            <textarea id="habits" rows="4" required></textarea>
+
+            <button type="submit">Log Entry</button>
+        </form>
+    </section>
+
+    <section id="analytics" style="display: none;">
+      <h2>Analytics</h2>
+      <canvas id="mood-chart"></canvas>
+  </section>
+
+    <section id="about">
+      <div class="about-desc">
+         <h1>About MentalTide Log</h1>
+         <p>
+            Introducing MentalTide Log by TravelTide—your companion on 
+            a journey to better mental health and well-being. MentalTide 
+            Log empowers you to document your daily moods, thoughts, and 
+            habits, offering a safe space for reflection. Through 
+            intuitive design, users can easily track their emotional 
+            landscape and uncover patterns over time. With detailed visual 
+            analytics, MentalTide Log helps you understand your mental 
+            health trends, providing insights that foster personal growth 
+            and resilience. Embrace a holistic approach to wellness and 
+            navigate life's tides with clarity and confidence. 🌊🧠✨
+            Perfect for those who seek a deeper connection with their 
+            inner self while leveraging the support and expertise of 
+            TravelTide's renowned travel experiences. Let MentalTide Log 
+            guide you to a serene state of mind, every day. 🌟📊📓
+         </p>
+      </div>
+    </section>
+   
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
